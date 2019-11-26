@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宝くじ予想ツール</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/lucky.css">
+</head>
+<body>
+    <!-- タイトル -->
+    <header>
+        <p class="title">宝くじ予想ツール</p>
+    </header>
+    <!-- メイン部分 -->
+    <div class="main">
+        <!-- 予想くじの選択エリア -->
+        <div class="selectarea">
+            <select name="selectkinds" id="selectkind" class="selectkind">
+                <option value="none" selected>選択してください</option>
+                <option value="3">ナンバーズ3</option>
+                <option value="4">ナンバーズ4</option>
+                <option value="5">ビンゴ5</option>
+                <option value="miniloto">ミニロト</option>
+                <option value="6">ロト6</option>
+                <option value="7">ロト7</option>
+            </select>
+        </div>
+        <!-- 予想くじのロゴエリア -->
+        <div class="logoarea"></div>
+        <!-- 予想数字表示 -->
+        <div class="forecastarea"></div>
+        <!-- 数字表示 -->
+        <div class="numberarea"></div>
+        <!-- 予想開始ボタン -->
+        <div class="btnarea">
+            <button class="btn">予想する</button>
+        </div>
+    </div>
+</body>
+<script src="js/lucky.js"></script>
+</html>
